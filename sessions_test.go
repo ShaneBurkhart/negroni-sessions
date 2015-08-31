@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/codegangsta/negroni"
-	"github.com/goincremental/negroni-sessions"
-	"github.com/goincremental/negroni-sessions/cookiestore"
+	"github.com/ShaneBurkhart/negroni-sessions"
+	"github.com/ShaneBurkhart/negroni-sessions/cookiestore"
 )
 
 func Test_Sessions(t *testing.T) {
@@ -83,7 +83,7 @@ func Test_Options(t *testing.T) {
 	n := negroni.Classic()
 	store := cookiestore.New([]byte("secret123"))
 	store.Options(sessions.Options{
-		Domain: "negroni-sessions.goincremental.com",
+		Domain: "negroni-sessions.ShaneBurkhart.com",
 	})
 
 	n.Use(sessions.Sessions("my_session", store))
@@ -121,7 +121,7 @@ func Test_Options(t *testing.T) {
 	}
 
 	s = strings.Split(res2.Header().Get("Set-Cookie"), ";")
-	if s[1] != " Domain=negroni-sessions.goincremental.com" {
+	if s[1] != " Domain=negroni-sessions.ShaneBurkhart.com" {
 		t.Error("Error writing domain with options:", s[1])
 	}
 }

@@ -5,7 +5,7 @@
 //
 //	import (
 //		"github.com/codegangsta/negroni"
-//		"github.com/goincremental/negroni-sessions"
+//		"github.com/ShaneBurkhart/negroni-sessions"
 //		"net/http"
 //	)
 //

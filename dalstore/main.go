@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/goincremental/dal"
-	nSessions "github.com/goincremental/negroni-sessions"
+	"github.com/ShaneBurkhart/dal"
+	nSessions "github.com/ShaneBurkhart/negroni-sessions"
 	"github.com/gorilla/securecookie"
 	gSessions "github.com/gorilla/sessions"
 )

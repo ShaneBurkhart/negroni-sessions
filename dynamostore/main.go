@@ -2,7 +2,7 @@ package dynamostore
 
 import (
 	dynstore "github.com/denizeren/dynamostore"
-	nSessions "github.com/goincremental/negroni-sessions"
+	nSessions "github.com/ShaneBurkhart/negroni-sessions"
 	gSessions "github.com/gorilla/sessions"
 )
 
